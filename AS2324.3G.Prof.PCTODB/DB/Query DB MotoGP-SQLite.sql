@@ -93,6 +93,15 @@ FROM
 	Piloti 
 ORDER BY 
 	nome, cognome;
+
+SELECT 
+	cognome || ' ' || nome as nominativo, nazionalita as nazionalita_pilota
+FROM 
+	Piloti 
+WHERE
+	nazionalita='ITA'
+ORDER BY
+	nome, cognome
 	
 SELECT 
 	* 

@@ -61,6 +61,7 @@
             btnElencoSquadre.TabIndex = 2;
             btnElencoSquadre.Text = "Elenco squadre";
             btnElencoSquadre.UseVisualStyleBackColor = true;
+            btnElencoSquadre.Click += btnElencoSquadre_Click;
             // 
             // Form1
             // 

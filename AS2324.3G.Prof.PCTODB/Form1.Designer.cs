@@ -28,18 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
+            dgvDati = new DataGridView();
+            btnConnectionDB = new Button();
+            btnElencoPiloti = new Button();
+            btnElencoSquadre = new Button();
+            ((System.ComponentModel.ISupportInitialize)dgvDati).BeginInit();
             SuspendLayout();
+            // 
+            // dgvDati
+            // 
+            dgvDati.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvDati.Location = new Point(15, 217);
+            dgvDati.Name = "dgvDati";
+            dgvDati.RowHeadersWidth = 51;
+            dgvDati.Size = new Size(834, 309);
+            dgvDati.TabIndex = 0;
+            // 
+            // btnConnectionDB
+            // 
+            btnConnectionDB.Location = new Point(252, 12);
+            btnConnectionDB.Name = "btnConnectionDB";
+            btnConnectionDB.Size = new Size(329, 39);
+            btnConnectionDB.TabIndex = 1;
+            btnConnectionDB.Text = "Connessione al DB";
+            btnConnectionDB.UseVisualStyleBackColor = true;
+            // 
+            // btnElencoPiloti
+            // 
+            btnElencoPiloti.Location = new Point(162, 135);
+            btnElencoPiloti.Name = "btnElencoPiloti";
+            btnElencoPiloti.Size = new Size(171, 41);
+            btnElencoPiloti.TabIndex = 2;
+            btnElencoPiloti.Text = "Elenco piloti";
+            btnElencoPiloti.UseVisualStyleBackColor = true;
+            // 
+            // btnElencoSquadre
+            // 
+            btnElencoSquadre.Location = new Point(531, 135);
+            btnElencoSquadre.Name = "btnElencoSquadre";
+            btnElencoSquadre.Size = new Size(171, 41);
+            btnElencoSquadre.TabIndex = 2;
+            btnElencoSquadre.Text = "Elenco squadre";
+            btnElencoSquadre.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(865, 536);
+            Controls.Add(btnElencoSquadre);
+            Controls.Add(btnElencoPiloti);
+            Controls.Add(btnConnectionDB);
+            Controls.Add(dgvDati);
             Name = "Form1";
             Text = "Prof;02/05/2024;3G;PCTO DB test uso DB da c#";
+            ((System.ComponentModel.ISupportInitialize)dgvDati).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView dgvDati;
+        private Button btnConnectionDB;
+        private Button btnElencoPiloti;
+        private Button btnElencoSquadre;
     }
 }
